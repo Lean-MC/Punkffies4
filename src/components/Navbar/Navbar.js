@@ -11,7 +11,7 @@ const Navbar = () => {
         </div>
 
          <div>
-         <button>Punkffies</button>
+         <button>1</button>
          <button>Punkcakes</button>
          <button>Punktres</button>
          </div>
