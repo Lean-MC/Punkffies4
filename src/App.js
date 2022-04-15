@@ -2,25 +2,39 @@ import { useState } from 'react'
 import './App.css';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import Navbar from './components/Navbar/Navbar'
+import NavBar from './components/NavBar/NavBar'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 
 const App = () => {
-const [show, setShow] = useState({ path: 'list', param: '1'})
-
-  const handleOnAdd = (quantity) => {
-    console.log(`se agregaron ${quantity} productos`)
-  }
+  // const [show, setShow] = useState({ path: 'list', param: '1'})
 
   return (
       <div className="App">
-        <Navbar />
-        <ItemListContainer greeting={'Hola coders'} />
-        <ItemDetailContainer/>
-      
-
-        {/* <button onClick={() => setShow(!show)}>{show ? 'Desmontar contador' : 'Montar contador'}</button>
-        { show ? <Counter initial={0} stock={10} onAdd={handleOnAdd}/> : null } */}
+        {/* <div>
+          <button onClick={() => setShow('/list')}>List</button>
+          <button onClick={() => setShow('/detail')}>Detail</button>
+        </div>
+        {show === '/list' ? <ItemListContainer /> : null}
+        {show === '/detail/1' ? <ItemDetailContainer /> : null} */}
+        <BrowserRouter>
+          <NavBar />
+          {/* <div>
+            <Link to='/list'>List</Link>
+            <Link to='/detail'>Detalle</Link>
+          </div> */}
+          <Routes>
+            {/* <Route path='/' element={<h1>HOME</h1>} />
+            <Route path='/list' element={<ItemListContainer />} />
+            <Route path='/detail' element={<ItemDetailContainer />} />
+            <Route path='*' element={<h1>NOT FOUND 404</h1>} /> */}
+            <Route path='/' element={<ItemListContainer />} />
+            <Route path='/category/:categoryId' element={<ItemListContainer />} />
+            <Route path='/detail/:productId' element={<ItemDetailContainer />} />
+            <Route path='*' element={<h1>NOT FOUND 404</h1>}/>
+          </Routes>
+        </BrowserRouter>
+        
       </div>
   );
 }

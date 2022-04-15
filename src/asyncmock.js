@@ -1,7 +1,7 @@
 const products = [
 
     {
-        id:1,
+        id:'1',
         name:'punkffies',
         price: 1000,
         category:'food',
@@ -10,7 +10,7 @@ const products = [
         description:'muffins de bandas de rock'
     },
     {
-        id:2,
+        id:'2',
         name:'punkcakes',
         price: 2000,
         category:'food',
@@ -20,7 +20,7 @@ const products = [
     },
     
     {
-        id:3,
+        id:'3',
         name:'punktres',
         price: 1000,
         category:'food',
@@ -34,7 +34,7 @@ const products = [
         return new Promise (resolve => {
             setTimeout(() => {
                 resolve(products)
-            }, 2000)
+            }, 500)
         })
     } 
     
@@ -42,6 +42,6 @@ const products = [
         return new Promise (resolve => {
             setTimeout(() => {
                 resolve(products.find(prod => prod.id === id))
-            }, 2000)
+            }, 500)
         })
     } 

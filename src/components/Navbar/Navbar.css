@@ -1,4 +1,4 @@
-.Navbar {
+.NavBar {
     display: flex;
     background: transparent;
     justify-content: space-around;
@@ -37,4 +37,26 @@
     outline: inherit;
 }
 
-
+.ActiveOption{
+    text-decoration: none;
+    border-radius: 25;
+    margin: 0 50px;
+    width: auto;
+    padding: 12px;
+    font-size: 8px;
+    background: blue;
+    border-radius: 8px;
+    flex: none;
+    display: flex;
+    order: 1;
+    align-self: center;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    border: none;
+    border-style: none;
+    cursor: pointer;
+    outline: inherit;
+}
