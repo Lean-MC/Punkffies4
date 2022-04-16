@@ -2,7 +2,7 @@
     width: auto;
     padding: 12px;
     font-size: 8px;
-    background: whitesmoke;
+    background: rgb(204, 15, 15);
     border-radius: 8px;
     flex: none;
     display: flex;
@@ -19,9 +19,7 @@
     font-size: medium;
 }
 
-.CartImg {
-    width: 20px;
-    margin-right: 10px;
-    
+.CartWidget img{
+    background-color: aqua;
 }
 

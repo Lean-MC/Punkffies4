@@ -20,7 +20,7 @@ const NavBar = () => {
 
     return(
      <nav className="NavBar">
-         <div>
+         <div className='title'>
              <Link to='/'>Punkffies</Link>
         </div>
 

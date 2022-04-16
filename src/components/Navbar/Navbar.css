@@ -4,7 +4,7 @@
     justify-content: space-around;
     align-items: center;
     height: 60px;
-    background: rgb(138, 9, 127);
+    background: rgb(165, 139, 139);
 }
 
 .categories {
@@ -13,7 +13,15 @@
     align-items: center;
 }
 
-.option{
+title{
+    text-decoration: none;
+    color: aqua;
+}
+
+
+    /*
+    
+    .option{
     text-decoration: none;
     border-radius: 25;
     margin: 0 50px;
@@ -60,3 +68,7 @@
     cursor: pointer;
     outline: inherit;
 }
+*/
+
+
+
