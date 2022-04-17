@@ -16,8 +16,25 @@ const ItemListContainer = (props) => {
         })
     }, [categoryId])
 
+    // const handleOnResize = (e) => {
+    //     console.log(e)
+    //     console.log('Cambio el tamaño de ItemListContainer')
+    // }
+
+    // useEffect(() => {
+    //     window.addEventListener('resize', handleOnResize)
+
+    //     return(() => {
+    //         window.removeEventListener('resize', handleOnResize)
+    //     })
+    // }, [])
+
+    const handleClick = () => {
+        console.log('Hice click en itemlistcontainer')
+    }
+
     return(
-        <div>
+        <div onClick={handleClick}>
             <h1>{props.greeting}</h1>
             <ItemList products={products}/>
         </div>
