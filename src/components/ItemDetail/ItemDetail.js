@@ -3,11 +3,14 @@ import { useState, useContext } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import Counter from '../Counter/Counter'
 import CartContext from '../../context/CartContext'
+import { useNotification } from '../../notification/Notification'
 
 
 const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
 
     const { addItem, isInCart } = useContext(CartContext)
+
+    const { setNotification } = useNotification()
 
     const handleAdd = (count) => {
         const productObj = {
@@ -15,6 +18,7 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
         }
 
         addItem(productObj)
+        setNotification('error', `Se agregaron ${count} ${name} correctamente`)
     }
 
     return (

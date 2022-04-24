@@ -6,6 +6,8 @@ import NavBar from './components/NavBar/NavBar'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Form from './components/Form/Form';
 import { CartContextProvider } from './context/CartContext';
+import Cart from './components/Cart/Cart';
+import { NotificationProvider } from './notification/Notification';
 
 // export const Context = createContext()
 
@@ -15,6 +17,7 @@ const App = () => {
   return (
       <div className="App">
         {/* <Context.Provider value={{ cart, setCart}}> */}
+        <NotificationProvider>
         <CartContextProvider>
           <BrowserRouter>
             <NavBar />
@@ -25,10 +28,12 @@ const App = () => {
               <Route path='/category/:categoryId' element={<ItemListContainer />} />
               <Route path='/detail/:productId' element={<ItemDetailContainer />} />
               <Route path='/form' element={<Form />} />
+              <Route path='/cart' element={<Cart />} />
             </Routes>
           </BrowserRouter> 
         {/* </Context.Provider> */}
-        </CartContextProvider>
+        </CartContextProvider> 
+        </NotificationProvider>
       </div>
   );
 }
