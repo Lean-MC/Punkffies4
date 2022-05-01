@@ -17,7 +17,7 @@ const App = () => {
   return (
       <div className="App">
         {/* <Context.Provider value={{ cart, setCart}}> */}
-        <NotificationProvider>
+        <NotificationProvider> 
         <CartContextProvider>
           <BrowserRouter>
             <NavBar />
