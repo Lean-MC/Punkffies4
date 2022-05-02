@@ -1,3 +1,4 @@
+import './ItemDetailContainer.css'
 import { useState, useEffect } from 'react'
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
@@ -11,28 +12,35 @@ const ItemDetailContainer = ({ setCart, cart }) => {
     const { productId } = useParams()
 
     useEffect(() => {
+        setLoading(true)
 
-        getDoc(doc(firestoreDb,"products",productId)).then(response => {
-            console.log(response)
-            const product = { id: response.id,...response.data()}
-            setProduct(product)
-        })
-        
-        return (() => {
-            setProduct()
-        })
+        const docRef = doc(firestoreDb, 'products', productId)
 
+        getDoc(docRef)
+            .then(response => {
+                const product = { id: response.id, ...response.data()}
+                setProduct(product)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+            .finally(() => {
+                setLoading(false)
+            })
     }, [productId])
 
+    if(loading) {
+        return(
+            <h1>Cargando...</h1> 
+        )
+    }
 
     return (
         <div className="ItemDetailContainer" >
             { 
-                loading ? 
-                    <h1>Cargando...</h1> :
-                product ? 
-                    <ItemDetail  {...product} setCart={setCart} cart={cart}/> :
-                    <h1>El producto no existe</h1> 
+                product 
+                    ? <ItemDetail  {...product} setCart={setCart} cart={cart}/> 
+                    : <h1>El producto no existe</h1> 
             }
         </div>
     )    
