@@ -1,5 +1,5 @@
 
-import './ItemListContainer.css'
+
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { getDocs, collection, query, where } from 'firebase/firestore'

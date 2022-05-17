@@ -65,7 +65,7 @@ const Cart = () => {
     }
 
     if(loading) {
-        return <h1>Se esta generando su orden</h1>
+        return <h1>Estamos armando tu pedido</h1>
     }
 
     if(getQuantity() === 0) {
@@ -79,8 +79,8 @@ const Cart = () => {
             <h1>Cart</h1>
             { cart.map(p => <CartItem key={p.id} {...p}/>) }
             <h3>Total: ${getTotal()}</h3>
-            <button onClick={() => clearCart()} className="Button">Limpiar carrito</button>
-            <button onClick={() => createOrder()} className="Button">Generar Orden</button>
+            <button onClick={() => clearCart()} className="Button">Borrar Compra</button>
+            <button onClick={() => createOrder()} className="Button">Confirmar Compra</button>
 
         </div>
     )

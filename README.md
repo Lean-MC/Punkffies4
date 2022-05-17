@@ -1,70 +1,11 @@
-# Getting Started with Create React App
+Buenas como estas? te pongo en contexto este es un proyecto de React en donde implemetamos cosas para hacer un ecomerce, no es el mejor de la clase seguro hay mejores pero es lo que pude hacer con lo que implementamos en 13 clases,en resumen es una tienda en donde se vende 3 productos diferentes, son ficticios osea son imagenes tomadas de internet porque no tuve tiempo de hornear y sacar fotos (si lo hubiera echo no quedarian iguales,obvio desastrozos) en el proyecto cada item tiene una descripcion y un stock es algo simple seleccionamos es item le damos a la cantidad que queremos comprar nos lleva a la seccion del carrito donde vemos el total y simulamos una compra.
+Como base de datos usamos Asybcmock y Firebase (ahi simulamos una base de datos por si no sabes usar Back-End por lo que entendi)donde guardamos la info de los item y las categorias si queres verlo tendrias que crear en Firebase la base de datos con los datos de los item osea: id , name ,price , description , img y stock y aparte las categories: cakes, muffins y Postres.
+cuando clones esto de Git-Hub luego dale a npm install asi actualizas a la version actual de React que este en tu momento.
+Creo que eso nomas, ahi abajo tenes un Link con mis repositorios, capaz cuando lo veas este actualizado y si tenes consultas pregunta ojala me acuerde jaja
+Saludos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Good how are you? I put you in context this is a React project where we implement things to make an e-commerce, it is not the best of the class sure there are better but it is what I could do with what we implemented in 13 classes, in short it is a store where 3 different products are sold, they are fictitious, that is, they are images taken from the internet because I did not have time to bake and take photos (if I had, they would not be the same, obviously disastrous) in the project each item has a description and a stock is something simple we select is item we give the amount we want to buy takes us to the cart section where we see the total and simulate a purchase
+As a database we use Asybcmock and Firebase (there we simulate a database in case you don't know how to use Back-End from what I understood) where we store the info of the items and the categories if you want to see it you would have to create the database in Firebase with the item data, that is: id , name , price , description , img and stock and apart from the categories: cakes, muffins and Postres.
+when you clone this from Git-Hub then hit npm install so you update to the current version of React that is at the moment.
+I think that's just it, down there you have a link with my repositories, maybe when you see it it's updated and if you have questions ask hopefully I remember haha
+Greetings
